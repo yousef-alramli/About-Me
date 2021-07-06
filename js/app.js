@@ -89,7 +89,7 @@ alert('you have 4 attempts for the next question')
 let correctAnswer = false;
 for (let i = 0; i < 4; i++) {
 
-    let num = prompt("guess a number between 1 to 10")
+    let num = prompt("guess a number between 1 to 10");
  if (num > 3) {
 
     alert("too high");
@@ -101,16 +101,18 @@ else if (num < 3) {
 
 }
 
-else if (num = 3) {
+else if (num == 3) {
     alert ('correct');
     correctAnswer = true;
     score++;
     break;
 }    
-
+else{
+    alert('please write numbers') 
+}
 }
 if (!correctAnswer) {
-   alert('the correct answer is 3') 
+   alert('the correct answer is 3') ;
 }
 alert('you have 6 attempts for the next question')
 
