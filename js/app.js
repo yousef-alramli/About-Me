@@ -86,9 +86,10 @@ default:
 }
 
 alert('you have 4 attempts for the next question')
+let correctAnswer = false;
 for (let i = 0; i < 4; i++) {
 
-    var num = prompt("guess a number between 1 to 10")
+    let num = prompt("guess a number between 1 to 10")
  if (num > 3) {
 
     alert("too high");
@@ -102,35 +103,42 @@ else if (num < 3) {
 
 else if (num = 3) {
     alert ('correct');
+    correctAnswer = true;
     score++;
     break;
 }    
 
 }
-if (num!=3) {
+if (!correctAnswer) {
    alert('the correct answer is 3') 
 }
 alert('you have 6 attempts for the next question')
 
 let suit = ['tie', 'shirt', 'jacket', 'pants']
 
+let correctSuit = false;
 
 for (let j = 0; j < 6; j++) {
-    var suitpices = prompt('the suit have 4 pices, name one of them')
+    let suitpices = prompt('the suit have 4 pices, name one of them')
 
     suitpices=suitpices.toLowerCase()
-
-   if (suitpices == suit[0]||suitpices == suit[1]||suitpices == suit[2]||suitpices == suit[3]) {
-        alert("thants correct");
-        score++;
-
+    
+    for (let i = 0; i < 4; i++) {
+        if(suitpices == suit[i]) {
+            correctSuit = true;
+            alert("thats correct");
+            score++;
+            break;
+        }
+    }
+    if(!correctSuit) {
+        alert("incorrect answer try again");
+    } else {
         break;
     }
-    else{
-        alert("incorrect answer try again");
-    }
 }
-if (suitpices == !suit[0]||suitpices == !suit[1]||suitpices == !suit[2]||suitpices == !suit[3]) {
+
+if (!correctSuit) {
     alert("the right answers are tie, shirt, jacket and pants");
 }
 
