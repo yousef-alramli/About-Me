@@ -7,7 +7,7 @@ console.log(name)
 
 alert ('hello and welcome '+name + ', thank you for taking this guess game')
 alert ('Please answer yes or no only')
-
+function question1(){
 let favcolor=prompt ( 'black is my favorite color ')
 
 favcolor=favcolor.toLowerCase()
@@ -27,6 +27,9 @@ default:
     alert('pleas answer whit yes or no only')
 
 }
+}
+question1()
+
 
 let favsport=prompt ( 'soccer is my favorite sport')
 
@@ -163,4 +166,4 @@ if (!correctSuit) {
     alert("the right answers are tie, shirt, jacket and pants");
 }
 
-alert('your score is ' + score + ' /7')
+ alert('your score is ' + score + ' /7')
