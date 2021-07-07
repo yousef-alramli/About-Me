@@ -65,6 +65,25 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
+let favpit=prompt ( 'pony is my favorite pet')
+
+favpit=favpit.toLowerCase()
+
+switch(favpit){
+case'yes':
+alert ('thats way too wrong');
+console.log('incorrect');
+score++;
+break;
+case'no':
+alert('its obviously correct');
+console.log('incorrect');
+score++;
+break;
+default:
+    alert('pleas answer whith yes or no only')
+
+}
 
 let favtv=prompt ( 'my favorite tv show is Friends')
 
@@ -144,4 +163,4 @@ if (!correctSuit) {
     alert("the right answers are tie, shirt, jacket and pants");
 }
 
-alert('your score is ' + score + ' /6')
+alert('your score is ' + score + ' /7')
