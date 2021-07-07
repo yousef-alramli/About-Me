@@ -154,8 +154,10 @@ if (!correctAnswer) {
 }
 }
 question6()
-alert('you have 6 attempts for the next question')
 
+
+alert('you have 6 attempts for the next question')
+function question7(){
 let suit = ['tie', 'shirt', 'jacket', 'pants']
 
 let correctSuit = false;
@@ -183,5 +185,6 @@ for (let j = 0; j < 6; j++) {
 if (!correctSuit) {
     alert("the right answers are tie, shirt, jacket and pants");
 }
-
+}
+ question7()
  alert('your score is ' + score + ' /7')
