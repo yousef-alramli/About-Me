@@ -30,6 +30,7 @@ default:
 }
 question1()
 
+function question2(){
 
 let favsport=prompt ( 'soccer is my favorite sport')
 
@@ -49,6 +50,8 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
+}
+question2()
 
 let uni=prompt ( 'I graduated from University of Jordan')
 
