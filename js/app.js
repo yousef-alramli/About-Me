@@ -73,6 +73,9 @@ default:
 }
 }
  question3()
+
+
+ function question4(){
 let favpit=prompt ( 'pony is my favorite pet')
 
 favpit=favpit.toLowerCase()
@@ -92,7 +95,10 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
+ }
+  question4()
 
+  
 let favtv=prompt ( 'my favorite tv show is Friends')
 
 favtv=favtv.toLowerCase()
