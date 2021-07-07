@@ -7,7 +7,7 @@ console.log(name)
 
 alert ('hello and welcome '+name + ', thank you for taking this guess game')
 alert ('Please answer yes or no only')
-
+function question1(){
 let favcolor=prompt ( 'black is my favorite color ')
 
 favcolor=favcolor.toLowerCase()
@@ -27,6 +27,10 @@ default:
     alert('pleas answer whit yes or no only')
 
 }
+}
+question1()
+
+function question2(){
 
 let favsport=prompt ( 'soccer is my favorite sport')
 
@@ -46,7 +50,9 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
-
+}
+question2()
+function question3(){
 let uni=prompt ( 'I graduated from University of Jordan')
 
 uni=uni.toLowerCase()
@@ -65,6 +71,11 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
+}
+ question3()
+
+
+ function question4(){
 let favpit=prompt ( 'pony is my favorite pet')
 
 favpit=favpit.toLowerCase()
@@ -84,7 +95,10 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
+ }
+  question4()
 
+  function question5(){
 let favtv=prompt ( 'my favorite tv show is Friends')
 
 favtv=favtv.toLowerCase()
@@ -103,9 +117,14 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
+  }
+   question5()
 
+   
 alert('you have 4 attempts for the next question')
+function question6(){
 let correctAnswer = false;
+
 for (let i = 0; i < 4; i++) {
 
     let num = prompt("guess a number between 1 to 10");
@@ -133,8 +152,12 @@ else{
 if (!correctAnswer) {
    alert('the correct answer is 3') ;
 }
-alert('you have 6 attempts for the next question')
+}
+question6()
 
+
+alert('you have 6 attempts for the next question')
+function question7(){
 let suit = ['tie', 'shirt', 'jacket', 'pants']
 
 let correctSuit = false;
@@ -162,5 +185,6 @@ for (let j = 0; j < 6; j++) {
 if (!correctSuit) {
     alert("the right answers are tie, shirt, jacket and pants");
 }
-
-alert('your score is ' + score + ' /7')
+}
+ question7()
+ alert('your score is ' + score + ' /7')
