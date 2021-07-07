@@ -119,8 +119,12 @@ default:
 }
   }
    question5()
+
+   
 alert('you have 4 attempts for the next question')
+function question6(){
 let correctAnswer = false;
+
 for (let i = 0; i < 4; i++) {
 
     let num = prompt("guess a number between 1 to 10");
@@ -148,6 +152,8 @@ else{
 if (!correctAnswer) {
    alert('the correct answer is 3') ;
 }
+}
+question6()
 alert('you have 6 attempts for the next question')
 
 let suit = ['tie', 'shirt', 'jacket', 'pants']
