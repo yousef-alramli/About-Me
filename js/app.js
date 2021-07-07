@@ -98,7 +98,7 @@ default:
  }
   question4()
 
-  
+  function question5(){
 let favtv=prompt ( 'my favorite tv show is Friends')
 
 favtv=favtv.toLowerCase()
@@ -117,7 +117,8 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
-
+  }
+   question5()
 alert('you have 4 attempts for the next question')
 let correctAnswer = false;
 for (let i = 0; i < 4; i++) {
