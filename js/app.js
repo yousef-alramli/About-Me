@@ -52,7 +52,7 @@ default:
 }
 }
 question2()
-
+function question3(){
 let uni=prompt ( 'I graduated from University of Jordan')
 
 uni=uni.toLowerCase()
@@ -71,6 +71,8 @@ default:
     alert('pleas answer whith yes or no only')
 
 }
+}
+ question3()
 let favpit=prompt ( 'pony is my favorite pet')
 
 favpit=favpit.toLowerCase()
